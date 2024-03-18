@@ -1,2 +1,2 @@
-# System_Lek-w_i_Recept
+# System_lekow_i_recept
 Projekt Bazy_Danych
