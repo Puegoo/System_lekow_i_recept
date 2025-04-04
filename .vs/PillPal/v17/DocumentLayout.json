@@ -1,0 +1,160 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "Z:\\Desktop\\GitHub\\System_lekow_i_recept-main\\PillPal\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|Z:\\Desktop\\GitHub\\System_lekow_i_recept-main\\PillPal\\PillPal\\Form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:PillPal\\Form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|Z:\\Desktop\\GitHub\\System_lekow_i_recept-main\\PillPal\\PillPal\\Form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:PillPal\\Form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|Z:\\Desktop\\GitHub\\System_lekow_i_recept-main\\PillPal\\pillpal\\accounttype_form.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:pillpal\\accounttype_form.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|Z:\\Desktop\\GitHub\\System_lekow_i_recept-main\\PillPal\\PillPal\\AccountType_Form.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:PillPal\\AccountType_Form.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|Z:\\Desktop\\GitHub\\System_lekow_i_recept-main\\PillPal\\pillpal\\accounttype_form_register.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:pillpal\\accounttype_form_register.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|Z:\\Desktop\\GitHub\\System_lekow_i_recept-main\\PillPal\\PillPal\\AccountType_Form_Register.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:PillPal\\AccountType_Form_Register.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|Z:\\Desktop\\GitHub\\System_lekow_i_recept-main\\PillPal\\pillpal\\form_pacjent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:pillpal\\form_pacjent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|Z:\\Desktop\\GitHub\\System_lekow_i_recept-main\\PillPal\\pillpal\\form_lekarz.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:pillpal\\form_lekarz.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|Z:\\Desktop\\GitHub\\System_lekow_i_recept-main\\PillPal\\pillpal\\form_farmaceuta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:pillpal\\form_farmaceuta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AccountType_Form.cs",
+              "DocumentMoniker": "Z:\\Desktop\\GitHub\\System_lekow_i_recept-main\\PillPal\\PillPal\\AccountType_Form.cs",
+              "RelativeDocumentMoniker": "PillPal\\AccountType_Form.cs",
+              "ToolTip": "Z:\\Desktop\\GitHub\\System_lekow_i_recept-main\\PillPal\\PillPal\\AccountType_Form.cs",
+              "RelativeToolTip": "PillPal\\AccountType_Form.cs",
+              "ViewState": "AQIAABwAAAAAmZmZmdkkwHMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-01T16:57:19.461Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AccountType_Form.cs [Projekt]",
+              "DocumentMoniker": "Z:\\Desktop\\GitHub\\System_lekow_i_recept-main\\PillPal\\PillPal\\AccountType_Form.cs",
+              "RelativeDocumentMoniker": "PillPal\\AccountType_Form.cs",
+              "ToolTip": "Z:\\Desktop\\GitHub\\System_lekow_i_recept-main\\PillPal\\PillPal\\AccountType_Form.cs [Projekt]",
+              "RelativeToolTip": "PillPal\\AccountType_Form.cs [Projekt]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-01T16:56:24.036Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Form1.cs [Projekt]",
+              "DocumentMoniker": "Z:\\Desktop\\GitHub\\System_lekow_i_recept-main\\PillPal\\PillPal\\Form1.cs",
+              "RelativeDocumentMoniker": "PillPal\\Form1.cs",
+              "ToolTip": "Z:\\Desktop\\GitHub\\System_lekow_i_recept-main\\PillPal\\PillPal\\Form1.cs [Projekt]",
+              "RelativeToolTip": "PillPal\\Form1.cs [Projekt]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-29T14:31:24.826Z",
+              "IsPinned": true,
+              "EditorCaption": " [Projekt]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "Z:\\Desktop\\GitHub\\System_lekow_i_recept-main\\PillPal\\PillPal\\Form1.cs",
+              "RelativeDocumentMoniker": "PillPal\\Form1.cs",
+              "ToolTip": "Z:\\Desktop\\GitHub\\System_lekow_i_recept-main\\PillPal\\PillPal\\Form1.cs",
+              "RelativeToolTip": "PillPal\\Form1.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-30T18:13:00.33Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AccountType_Form_Register.cs [Projekt]",
+              "DocumentMoniker": "Z:\\Desktop\\GitHub\\System_lekow_i_recept-main\\PillPal\\PillPal\\AccountType_Form_Register.cs",
+              "RelativeDocumentMoniker": "PillPal\\AccountType_Form_Register.cs",
+              "ToolTip": "Z:\\Desktop\\GitHub\\System_lekow_i_recept-main\\PillPal\\PillPal\\AccountType_Form_Register.cs [Projekt]",
+              "RelativeToolTip": "PillPal\\AccountType_Form_Register.cs [Projekt]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-02T19:00:03.425Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AccountType_Form_Register.cs",
+              "DocumentMoniker": "Z:\\Desktop\\GitHub\\System_lekow_i_recept-main\\PillPal\\PillPal\\AccountType_Form_Register.cs",
+              "RelativeDocumentMoniker": "PillPal\\AccountType_Form_Register.cs",
+              "ToolTip": "Z:\\Desktop\\GitHub\\System_lekow_i_recept-main\\PillPal\\PillPal\\AccountType_Form_Register.cs",
+              "RelativeToolTip": "PillPal\\AccountType_Form_Register.cs",
+              "ViewState": "AQIAAJwAAACA/////38ZwCsAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-02T19:30:25.99Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Form_Pacjent.cs [Projekt]",
+              "DocumentMoniker": "Z:\\Desktop\\GitHub\\System_lekow_i_recept-main\\PillPal\\PillPal\\Form_Pacjent.cs",
+              "RelativeDocumentMoniker": "PillPal\\Form_Pacjent.cs",
+              "ToolTip": "D:\\Users\\nowak\\source\\repos\\PillPal\\PillPal\\Form_Pacjent.cs [Projekt]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-05T14:58:36.8Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Form_Lekarz.cs [Projekt]",
+              "DocumentMoniker": "Z:\\Desktop\\GitHub\\System_lekow_i_recept-main\\PillPal\\PillPal\\Form_Lekarz.cs",
+              "RelativeDocumentMoniker": "PillPal\\Form_Lekarz.cs",
+              "ToolTip": "D:\\Users\\nowak\\source\\repos\\PillPal\\PillPal\\Form_Lekarz.cs [Projekt]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-05T16:31:14.975Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Form_Farmaceuta.cs [Projekt]",
+              "DocumentMoniker": "Z:\\Desktop\\GitHub\\System_lekow_i_recept-main\\PillPal\\PillPal\\Form_Farmaceuta.cs",
+              "RelativeDocumentMoniker": "PillPal\\Form_Farmaceuta.cs",
+              "ToolTip": "D:\\Users\\nowak\\source\\repos\\PillPal\\PillPal\\Form_Farmaceuta.cs [Projekt]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-05T16:32:21.597Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
