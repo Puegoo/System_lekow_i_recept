@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Drawing;
 using System.Drawing.Drawing2D;
-using System.Reflection;
 using System.Windows.Forms;
 
 namespace PillPal
@@ -9,12 +8,21 @@ namespace PillPal
     public partial class AccountType_Form : UserControl
     {
         private DateTime[] animationStartTimes;
-        private TimeSpan animationDuration = TimeSpan.FromMilliseconds(300); // Czas trwania animacji (500 milisekund)
+        private TimeSpan animationDuration = TimeSpan.FromMilliseconds(300); // Czas trwania animacji (300 milisekund)
         private Timer[] colorTimers;
+        private Loading_Win loadingWin;
 
-        public AccountType_Form()
+        private DatabaseService databaseService;
+
+        public AccountType_Form(Loading_Win loadingWin)
         {
             InitializeComponent();
+
+            this.loadingWin = loadingWin;
+
+            // Inicjalizacja serwisu bazy danych
+            databaseService = new DatabaseService();
+            databaseService.TestConnection();
 
             // Inicjalizacja tablicy czasów rozpoczęcia animacji i timerów dla paneli
             animationStartTimes = new DateTime[] { DateTime.MinValue, DateTime.MinValue, DateTime.MinValue };
@@ -90,7 +98,20 @@ namespace PillPal
 
         private void Pacjent_Panel_MouseClick(object sender, MouseEventArgs e)
         {
-            
+            Win_Log_Pacjent logWindowPacjent = new Win_Log_Pacjent(loadingWin);
+            logWindowPacjent.ShowDialog();
+        }
+
+        private void Lekarz_Panel_MouseClick(object sender, MouseEventArgs e)
+        {
+            Win_Log_Lekarz logWindowLekarz = new Win_Log_Lekarz(loadingWin);
+            logWindowLekarz.ShowDialog();
+        }
+
+        private void Farmaceuta_Panel_MouseClick(object sender, MouseEventArgs e)
+        {
+            Win_Log_Farmaceuta logWindowFarmaceuta = new Win_Log_Farmaceuta(loadingWin);
+            logWindowFarmaceuta.ShowDialog();
         }
 
         private void RoundCornersOfPanel(Panel panel)
@@ -119,7 +140,7 @@ namespace PillPal
         private void Sign_Up_Click(object sender, EventArgs e)
         {
             // Utwórz nową instancję AccountType_Form_Register
-            var accountTypeFormRegister = new AccountType_Form_Register();
+            var accountTypeFormRegister = new AccountType_Form_Register(loadingWin);
 
             // Dodaj AccountType_Form_Register do kontenera (na przykład Panel)
             this.Controls.Clear();
@@ -128,18 +149,17 @@ namespace PillPal
 
         private void PillPal_Logo_Click(object sender, EventArgs e)
         {
-
+            // Obsługa kliknięcia na logo
         }
 
         private void Welcome_Label_Click(object sender, EventArgs e)
         {
-
+            // Obsługa kliknięcia na etykiecie powitalnej
         }
 
         private void label1_Click(object sender, EventArgs e)
         {
-
+            // Obsługa kliknięcia na innej etykiecie
         }
     }
 }
-

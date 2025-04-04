@@ -30,30 +30,30 @@
         {
             this.Pacjent_Panel = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
-            this.Pacjent_ikon = new System.Windows.Forms.PictureBox();
             this.Lekarz_Panel = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
-            this.Lekarz_ikon = new System.Windows.Forms.PictureBox();
             this.Farmaceuta_Panel = new System.Windows.Forms.Panel();
             this.label5 = new System.Windows.Forms.Label();
-            this.Farmaceuta_ikon = new System.Windows.Forms.PictureBox();
             this.Welcome_Label = new System.Windows.Forms.Label();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.Sign_Up = new System.Windows.Forms.Button();
             this.flowLayoutPanel4 = new System.Windows.Forms.FlowLayoutPanel();
-            this.PillPal_Logo = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.Farmaceuta_ikon = new System.Windows.Forms.PictureBox();
+            this.Lekarz_ikon = new System.Windows.Forms.PictureBox();
+            this.Pacjent_ikon = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.PillPal_Logo = new System.Windows.Forms.PictureBox();
             this.Pacjent_Panel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.Pacjent_ikon)).BeginInit();
             this.Lekarz_Panel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.Lekarz_ikon)).BeginInit();
             this.Farmaceuta_Panel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.Farmaceuta_ikon)).BeginInit();
             this.flowLayoutPanel1.SuspendLayout();
             this.flowLayoutPanel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.PillPal_Logo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Farmaceuta_ikon)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Lekarz_ikon)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Pacjent_ikon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PillPal_Logo)).BeginInit();
             this.SuspendLayout();
             // 
             // Pacjent_Panel
@@ -69,6 +69,7 @@
             this.Pacjent_Panel.Name = "Pacjent_Panel";
             this.Pacjent_Panel.Size = new System.Drawing.Size(346, 380);
             this.Pacjent_Panel.TabIndex = 10;
+            this.Pacjent_Panel.MouseClick += new System.Windows.Forms.MouseEventHandler(this.Pacjent_Panel_MouseClick);
             // 
             // label3
             // 
@@ -83,17 +84,7 @@
             this.label3.Size = new System.Drawing.Size(139, 48);
             this.label3.TabIndex = 1;
             this.label3.Text = "Pacjent";
-            // 
-            // Pacjent_ikon
-            // 
-            this.Pacjent_ikon.Image = global::PillPal.Properties.Resources.Pacjent_ikona;
-            this.Pacjent_ikon.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.Pacjent_ikon.Location = new System.Drawing.Point(0, 39);
-            this.Pacjent_ikon.Name = "Pacjent_ikon";
-            this.Pacjent_ikon.Size = new System.Drawing.Size(346, 196);
-            this.Pacjent_ikon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.Pacjent_ikon.TabIndex = 0;
-            this.Pacjent_ikon.TabStop = false;
+            this.label3.MouseClick += new System.Windows.Forms.MouseEventHandler(this.Pacjent_Panel_MouseClick);
             // 
             // Lekarz_Panel
             // 
@@ -104,6 +95,7 @@
             this.Lekarz_Panel.Name = "Lekarz_Panel";
             this.Lekarz_Panel.Size = new System.Drawing.Size(346, 380);
             this.Lekarz_Panel.TabIndex = 11;
+            this.Lekarz_Panel.MouseClick += new System.Windows.Forms.MouseEventHandler(this.Lekarz_Panel_MouseClick);
             // 
             // label4
             // 
@@ -119,17 +111,7 @@
             this.label4.Size = new System.Drawing.Size(126, 48);
             this.label4.TabIndex = 2;
             this.label4.Text = "Lekarz";
-            // 
-            // Lekarz_ikon
-            // 
-            this.Lekarz_ikon.Image = global::PillPal.Properties.Resources.Lekarz_ikona1;
-            this.Lekarz_ikon.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.Lekarz_ikon.Location = new System.Drawing.Point(0, 39);
-            this.Lekarz_ikon.Name = "Lekarz_ikon";
-            this.Lekarz_ikon.Size = new System.Drawing.Size(346, 209);
-            this.Lekarz_ikon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.Lekarz_ikon.TabIndex = 0;
-            this.Lekarz_ikon.TabStop = false;
+            this.label4.MouseClick += new System.Windows.Forms.MouseEventHandler(this.Lekarz_Panel_MouseClick);
             // 
             // Farmaceuta_Panel
             // 
@@ -140,6 +122,7 @@
             this.Farmaceuta_Panel.Name = "Farmaceuta_Panel";
             this.Farmaceuta_Panel.Size = new System.Drawing.Size(346, 380);
             this.Farmaceuta_Panel.TabIndex = 12;
+            this.Farmaceuta_Panel.MouseClick += new System.Windows.Forms.MouseEventHandler(this.Farmaceuta_Panel_MouseClick);
             // 
             // label5
             // 
@@ -154,17 +137,7 @@
             this.label5.Size = new System.Drawing.Size(212, 48);
             this.label5.TabIndex = 1;
             this.label5.Text = "Farmaceuta";
-            // 
-            // Farmaceuta_ikon
-            // 
-            this.Farmaceuta_ikon.Image = global::PillPal.Properties.Resources.Farmaceuta_ikona;
-            this.Farmaceuta_ikon.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.Farmaceuta_ikon.Location = new System.Drawing.Point(0, 39);
-            this.Farmaceuta_ikon.Name = "Farmaceuta_ikon";
-            this.Farmaceuta_ikon.Size = new System.Drawing.Size(346, 196);
-            this.Farmaceuta_ikon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.Farmaceuta_ikon.TabIndex = 0;
-            this.Farmaceuta_ikon.TabStop = false;
+            this.label5.MouseClick += new System.Windows.Forms.MouseEventHandler(this.Farmaceuta_Panel_MouseClick);
             // 
             // Welcome_Label
             // 
@@ -222,6 +195,67 @@
             this.flowLayoutPanel4.Size = new System.Drawing.Size(1242, 57);
             this.flowLayoutPanel4.TabIndex = 18;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 26.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(50)))), ((int)(((byte)(84)))));
+            this.label1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.label1.Location = new System.Drawing.Point(480, 237);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(284, 48);
+            this.label1.TabIndex = 13;
+            this.label1.Text = "Loguje się jako...";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
+            // 
+            // Farmaceuta_ikon
+            // 
+            this.Farmaceuta_ikon.Image = global::PillPal.Properties.Resources.Farmaceuta_ikona;
+            this.Farmaceuta_ikon.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.Farmaceuta_ikon.Location = new System.Drawing.Point(0, 39);
+            this.Farmaceuta_ikon.Name = "Farmaceuta_ikon";
+            this.Farmaceuta_ikon.Size = new System.Drawing.Size(346, 196);
+            this.Farmaceuta_ikon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.Farmaceuta_ikon.TabIndex = 0;
+            this.Farmaceuta_ikon.TabStop = false;
+            this.Farmaceuta_ikon.MouseClick += new System.Windows.Forms.MouseEventHandler(this.Farmaceuta_Panel_MouseClick);
+            // 
+            // Lekarz_ikon
+            // 
+            this.Lekarz_ikon.Image = global::PillPal.Properties.Resources.Lekarz_ikona1;
+            this.Lekarz_ikon.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.Lekarz_ikon.Location = new System.Drawing.Point(0, 39);
+            this.Lekarz_ikon.Name = "Lekarz_ikon";
+            this.Lekarz_ikon.Size = new System.Drawing.Size(346, 209);
+            this.Lekarz_ikon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.Lekarz_ikon.TabIndex = 0;
+            this.Lekarz_ikon.TabStop = false;
+            this.Lekarz_ikon.MouseClick += new System.Windows.Forms.MouseEventHandler(this.Lekarz_Panel_MouseClick);
+            // 
+            // Pacjent_ikon
+            // 
+            this.Pacjent_ikon.Image = global::PillPal.Properties.Resources.Pacjent_ikona;
+            this.Pacjent_ikon.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.Pacjent_ikon.Location = new System.Drawing.Point(0, 39);
+            this.Pacjent_ikon.Name = "Pacjent_ikon";
+            this.Pacjent_ikon.Size = new System.Drawing.Size(346, 196);
+            this.Pacjent_ikon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.Pacjent_ikon.TabIndex = 0;
+            this.Pacjent_ikon.TabStop = false;
+            this.Pacjent_ikon.MouseClick += new System.Windows.Forms.MouseEventHandler(this.Pacjent_Panel_MouseClick);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.pictureBox1.BackColor = System.Drawing.Color.LightGray;
+            this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.pictureBox1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.pictureBox1.Location = new System.Drawing.Point(92, 228);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(1050, 2);
+            this.pictureBox1.TabIndex = 9;
+            this.pictureBox1.TabStop = false;
+            // 
             // PillPal_Logo
             // 
             this.PillPal_Logo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(50)))), ((int)(((byte)(84)))));
@@ -236,31 +270,6 @@
             this.PillPal_Logo.TabIndex = 7;
             this.PillPal_Logo.TabStop = false;
             this.PillPal_Logo.Click += new System.EventHandler(this.PillPal_Logo_Click);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.pictureBox1.BackColor = System.Drawing.Color.LightGray;
-            this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.pictureBox1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.pictureBox1.Location = new System.Drawing.Point(92, 228);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(1050, 2);
-            this.pictureBox1.TabIndex = 9;
-            this.pictureBox1.TabStop = false;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 26.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(50)))), ((int)(((byte)(84)))));
-            this.label1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label1.Location = new System.Drawing.Point(480, 237);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(284, 48);
-            this.label1.TabIndex = 13;
-            this.label1.Text = "Loguje się jako...";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // AccountType_Form
             // 
@@ -280,17 +289,17 @@
             this.Load += new System.EventHandler(this.AccountType_Form_Load);
             this.Pacjent_Panel.ResumeLayout(false);
             this.Pacjent_Panel.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.Pacjent_ikon)).EndInit();
             this.Lekarz_Panel.ResumeLayout(false);
             this.Lekarz_Panel.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.Lekarz_ikon)).EndInit();
             this.Farmaceuta_Panel.ResumeLayout(false);
             this.Farmaceuta_Panel.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.Farmaceuta_ikon)).EndInit();
             this.flowLayoutPanel1.ResumeLayout(false);
             this.flowLayoutPanel4.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.PillPal_Logo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Farmaceuta_ikon)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Lekarz_ikon)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Pacjent_ikon)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PillPal_Logo)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -1,13 +1,6 @@
-﻿// AccountType_Form_Register.cs
-using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
+﻿using System;
 using System.Drawing;
 using System.Drawing.Drawing2D;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace PillPal
@@ -17,11 +10,15 @@ namespace PillPal
         private DateTime[] animationStartTimes;
         private TimeSpan animationDuration = TimeSpan.FromMilliseconds(300); // Czas trwania animacji (500 milisekund)
         private Timer[] colorTimers;
+        private Loading_Win loadingWin;
 
-        public AccountType_Form_Register()
+        public AccountType_Form_Register(Loading_Win loadingWin)
         {
             InitializeComponent();
 
+            this.loadingWin = loadingWin;
+            this.Height = 800;
+            this.Width = 1245;
 
             // Inicjalizacja tablicy czasów rozpoczęcia animacji i timerów dla paneli
             animationStartTimes = new DateTime[] { DateTime.MinValue, DateTime.MinValue, DateTime.MinValue };
@@ -31,7 +28,6 @@ namespace PillPal
             AddPanelHoverAnimation(Pacjent_Panel, 0);
             AddPanelHoverAnimation(Lekarz_Panel, 1);
             AddPanelHoverAnimation(Farmaceuta_Panel, 2);
-
 
             RoundCornersOfPanel(Pacjent_Panel);
             RoundCornersOfPanel(Lekarz_Panel);
@@ -55,7 +51,7 @@ namespace PillPal
 
             foreach (Control control in Farmaceuta_Panel.Controls)
             {
-               control.MouseClick += Farmaceuta_Panel_MouseClick;
+                control.MouseClick += Farmaceuta_Panel_MouseClick;
             }
         }
 
@@ -114,7 +110,7 @@ namespace PillPal
         private void Pacjent_Panel_MouseClick(object sender, MouseEventArgs e)
         {
             Form_Register.Controls.Clear();
-            Form_Pacjent formPacjent = new Form_Pacjent();
+            Form_Pacjent formPacjent = new Form_Pacjent(this); // Przekaż referencję do bieżącego formularza
 
             Form_Register.Controls.Remove(label6);
             Form_Register.Controls.Add(formPacjent);
@@ -124,7 +120,7 @@ namespace PillPal
         private void Lekarz_Panel_MouseClick(object sender, MouseEventArgs e)
         {
             Form_Register.Controls.Clear();
-            Form_Lekarz formLekarz = new Form_Lekarz();
+            Form_Lekarz formLekarz = new Form_Lekarz(this);
 
             Form_Register.Controls.Remove(label6);
             Form_Register.Controls.Add(formLekarz);
@@ -134,7 +130,7 @@ namespace PillPal
         private void Farmaceuta_Panel_MouseClick(object sender, MouseEventArgs e)
         {
             Form_Register.Controls.Clear();
-            Form_Farmaceuta formFarmaceuta = new Form_Farmaceuta();
+            Form_Farmaceuta formFarmaceuta = new Form_Farmaceuta(this);
 
             Form_Register.Controls.Remove(label6);
             Form_Register.Controls.Add(formFarmaceuta);
@@ -162,12 +158,17 @@ namespace PillPal
         private void Return_Btn_Click(object sender, EventArgs e)
         {
             // Utwórz nową instancję AccountType_Form
-            var accountTypeForm = new AccountType_Form();
+            var accountTypeForm = new AccountType_Form(loadingWin);
             this.AutoScroll = false;
 
             // Dodaj AccountType_Form do kontenera (na przykład Panel)
             this.Controls.Clear();
             this.Controls.Add(accountTypeForm);
+        }
+
+        public void InvokeReturnButtonClick()
+        {
+            Return_Btn_Click(this, EventArgs.Empty);
         }
     }
 }
