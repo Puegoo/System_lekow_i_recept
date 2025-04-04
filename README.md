@@ -87,71 +87,102 @@ Naszym celem jest stworzenie kompleksowego systemu wspierającego zarządzanie l
 
 ## Galeria
 
+### Strona główna
+
 <div align="center">
   <img src="Docs/strona_glowna.png" width="100%" alt="Strona główna">
-</div>  
-
-&nbsp;
-
-<hr>
-
-### **Logowanie**
-
-<img src="Docs/log_pac.png" alt="Panel pacjenta" align="left" width="48%"/>
-
-<img src="Docs/log_lek.png" alt="Panel pacjenta" align="right" width="48%"/>
-
-<div style="clear: both;"></div>
-
-<div style="text-align:center; margin-top:24px;">
-  <img src="Docs/log_far.png" alt="Panel pacjenta" width="48%" style="margin-bottom:24px;"/>
 </div>
 
-<div style="clear: both;"></div>
+---
 
-<br>
+### Logowanie
 
-### **Pacjent**
+<table>
+  <tr>
+    <td align="center">
+      <img src="Docs/log_pac.png" width="90%"><br>Logowanie pacjenta
+    </td>
+    <td align="center">
+      <img src="Docs/log_lek.png" width="90%"><br>Logowanie lekarza
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2" align="center">
+      <img src="Docs/log_far.png" width="45%"><br>Logowanie farmaceuty
+    </td>
+  </tr>
+</table>
 
-<img src="Docs/panel_pac.png" alt="Panel pacjenta" align="left" width="48%" style="margin-bottom:24px;"/>
+---
 
-<img src="Docs/panel_pac_lek.png" alt="Leki pacjenta" align="right" width="48%" style="margin-bottom:24px;"/>
+### Pacjent
 
-<img src="Docs/panel_pac_edyt.png" alt="Edycja danych pacjenta" align="left" width="48%" style="margin-bottom:24px;"/>
-<img src="Docs/panel_pac_rec.png" alt="Recepty pacjenta" align="right" width="48%" style="margin-bottom:24px;"/>
+<table>
+  <tr>
+    <td align="center">
+      <img src="Docs/panel_pac.png" width="90%"><br>Panel pacjenta
+    </td>
+    <td align="center">
+      <img src="Docs/panel_pac_lek.png" width="90%"><br>Leki pacjenta
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <img src="Docs/panel_pac_edyt.png" width="90%"><br>Edycja danych
+    </td>
+    <td align="center">
+      <img src="Docs/panel_pac_rec.png" width="90%"><br>Recepty pacjenta
+    </td>
+  </tr>
+</table>
 
-<div style="clear: both;"></div>
+---
 
-<br>
+### Lekarz
 
-### **Lekarz**
+<table>
+  <tr>
+    <td align="center">
+      <img src="Docs/panel_lek.png" width="90%"><br>Panel lekarza
+    </td>
+    <td align="center">
+      <img src="Docs/panel_lek_rec.png" width="90%"><br>Recepty lekarza
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2" align="center">
+      <img src="Docs/panel_lek_pac.png" width="45%"><br>Pacjenci lekarza
+    </td>
+  </tr>
+</table>
 
-<img src="Docs/panel_lek.png" alt="Panel lekarza" align="left" width="48%" style="margin-bottom:24px;"/>
+---
 
-<img src="Docs/panel_lek_rec.png" alt="Panel lekarza" align="right" width="48%" style="margin-bottom:24px;"/>
+### Farmaceuta
 
-<img src="Docs/panel_lek_pac.png" alt="Wystawianie recepty" align="left" width="48%" style="margin-bottom:24px;"/>
-
-
-
-<div style="clear: both;"></div>
-
-<br>
-
-### **Farmaceuta**
-
-<img src="Docs/panel_far.png" alt="Panel farmaceuty" align="left" width="48%" style="margin-bottom:24px;"/>
-
-<img src="Docs/panel_far_rec_szcz.png" alt="Panel farmaceuty" align="right" width="48%" style="margin-bottom:24px;"/>
-
-<img src="Docs/panel_far_aso.png" alt="Leki w aptece" align="left" width="48%" style="margin-bottom:24px;"/>
-
-<img src="Docs/panel_far_mag.png" alt="Panel farmaceuty" align="right" width="48%" style="margin-bottom:24px;"/>
-<img src="Docs/panel_far_rec.png" alt="Leki w aptece" align="left" width="48%" style="margin-bottom:24px;"/>
-
-
-
-<div style="clear: both;"></div>
+<table>
+  <tr>
+    <td align="center">
+      <img src="Docs/panel_far.png" width="90%"><br>Panel farmaceuty
+    </td>
+    <td align="center">
+      <img src="Docs/panel_far_rec_szcz.png" width="90%"><br>Szczegóły recepty
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <img src="Docs/panel_far_aso.png" width="90%"><br>Asortyment apteki
+    </td>
+    <td align="center">
+      <img src="Docs/panel_far_mag.png" width="90%"><br>Magazyn apteki
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2" align="center">
+      <img src="Docs/panel_far_rec.png" width="45%"><br>Recepty w aptece
+    </td>
+  </tr>
+</table>
 
 
 ## Autorzy
