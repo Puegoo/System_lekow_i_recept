@@ -60,7 +60,7 @@ Naszym celem jest stworzenie kompleksowego systemu wspierającego zarządzanie l
 
 **Diagram ERD**  
 <div style="text-align:center; margin-bottom:24px;">
-  <img src="Docs/Baza.png" alt="Diagram ERD" width="600">
+  <img src="Docs/Baza.png" alt="Diagram ERD" width="100%">
 </div>
 
 ---
