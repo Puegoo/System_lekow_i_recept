@@ -1,190 +1,191 @@
-<h1 align="center">PillPal</h1>
+# PillPal
 
 <div align="center">
-  <img src="Docs/PillPal_banner.png" width="100%" alt="Baner">
+  <img src="Docs/PillPal_banner.png" width="100%" alt="Banner">
 </div>
 
-## Spis treści
-1. [Opis założeń projektu](#opis-założeń-projektu)
-2. [Funkcje systemu](#funkcje-systemu)
-3. [Funkcje bazy danych](#funkcje-bazy-danych)
-4. [Baza danych](#baza-danych)
-5. [Przykładowe dane](#przykładowe-dane)
-6. [Galeria](#galeria)
-7. [Autorzy](#autorzy)
+## Table of Contents
+
+1. [Project Overview](#project-overview)
+2. [System Features](#system-features)
+3. [Database Procedures](#database-procedures)
+4. [Database Schema](#database-schema)
+5. [Sample Data](#sample-data)
+6. [Gallery](#gallery)
+7. [Authors](#authors)
 
 ---
 
-## Opis założeń projektu
+## Project Overview
 
-Naszym celem jest stworzenie kompleksowego systemu wspierającego zarządzanie lekami, receptami oraz danymi pacjentów. Projekt ten ma na celu ułatwienie interakcji między pacjentami, lekarzami i farmaceutami, poprzez stworzenie internetowej platformy, która umożliwi łatwe zarządzanie informacjami dotyczącymi leczenia.
-
----
-
-## Funkcje systemu
-
-- **Logowanie i uwierzytelnianie**  
-  Funkcja ta umożliwia użytkownikom logowanie się do systemu poprzez indywidualne konta.
-
-- **Zarządzanie danymi pacjentów**  
-  Pacjenci mogą zarejestrować się w systemie, przeglądać swoje dane osobowe oraz historię recept.
-
-- **Wystawianie recept**  
-  Lekarze mogą wystawiać recepty dla pacjentów, określając potrzebne leki oraz ich ilość.
-
-- **Zarządzanie lekami**  
-  Farmaceuci mogą dodawać informacje o dostępnych lekach w swojej aptece, wraz z ich ilością i ceną.
-
-- **Zarządzanie aptekami**  
-  Informacje o aptekach, takie jak nazwa, lokalizacja (miasto, ulica, numer) oraz asortyment leków, są przechowywane w systemie.
-
-- **Śledzenie statusu recept**  
-  Pacjenci mogą śledzić status swoich recept — czy są zrealizowane lub oczekują na realizację w aptece.
+Our goal is to create a comprehensive system for managing medications, prescriptions, and patient data. This project aims to streamline interactions between patients, doctors, and pharmacists by providing a web platform for easy management of treatment information.
 
 ---
 
-## Funkcje bazy danych
+## System Features
 
-- **Zarządzanie receptami**  
-  Procedury PL/SQL do dodawania, aktualizowania i usuwania recept oraz leków na receptach.
+* **Authentication and Login**
+  Users can log in using individual accounts.
 
-- **Zarządzanie asortymentem**  
-  Procedury PL/SQL do dodawania i aktualizowania stanu magazynowego leków w aptekach.
+* **Patient Data Management**
+  Patients can register, view their personal information, and access their prescription history.
 
-- **Bezpieczeństwo**  
-  Funkcje PL/SQL do walidacji danych, generowania unikalnych kodów recept oraz sprawdzania unikalności PESEL.
+* **Prescription Issuance**
+  Doctors can issue prescriptions for patients, specifying required medications and dosages.
+
+* **Medication Inventory**
+  Pharmacists can add and update available medications in their pharmacy, including quantity and price.
+
+* **Pharmacy Management**
+  Stores pharmacy information such as name, location (city, street, number), and medication inventory.
+
+* **Prescription Status Tracking**
+  Patients can track prescription status (fulfilled or pending) at the pharmacy.
 
 ---
 
-## Baza danych
+## Database Procedures
 
-**Diagram ERD**  
+* **Prescription Management**
+  PL/SQL procedures for adding, updating, and deleting prescriptions and their medications.
+
+* **Inventory Management**
+  PL/SQL procedures for adding and updating medication stock levels in pharmacies.
+
+* **Data Security**
+  PL/SQL functions for data validation, generating unique prescription codes, and verifying unique national IDs (PESEL).
+
+---
+
+## Database Schema
+
+**ERD Diagram**
+
 <div style="text-align:center; margin-bottom:24px;">
-  <img src="Docs/Baza.png" alt="Diagram ERD" width="100%">
+  <img src="Docs/Baza.png" alt="ERD Diagram" width="100%">
 </div>
 
 ---
 
-## Przykładowe dane
+## Sample Data
 
-- **Pacjent**  
-  Login: `piotr`  
-  Hasło: `zaq1@WSX`
+* **Patient**
+  Login: `piotr`
+  Password: `zaq1@WSX`
 
-- **Lekarz**  
-  Login: `lekarz1` (od 1 do 9)  
-  Hasło: `zaq1@WSX`
+* **Doctor**
+  Login: `doctor1`, `doctor2`, … `doctor9`
+  Password: `zaq1@WSX`
 
-- **Farmaceuta**  
-  Login: `farm1` (także 2, 3)  
-  Hasło: `zaq1@WSX`
+* **Pharmacist**
+  Login: `pharm1`, `pharm2`, `pharm3`
+  Password: `zaq1@WSX`
 
-- **Baza danych**  
-  Login: `hr`  
-  Hasło: `oracle`
+* **Database User**
+  Login: `hr`
+  Password: `oracle`
 
 ---
 
-## Galeria
+## Gallery
 
-### Strona główna
+### Home Page
 
 <div align="center">
-  <img src="Docs/strona_glowna.png" width="100%" alt="Strona główna">
+  <img src="Docs/strona_glowna.png" width="100%" alt="Home Page">
 </div>
 
 ---
 
-### Logowanie
+### Login Screens
 
 <table>
   <tr>
     <td align="center">
-      <img src="Docs/log_pac.png" width="90%"><br>Logowanie pacjenta
+      <img src="Docs/log_pac.png" width="90%"><br>Patient Login
     </td>
     <td align="center">
-      <img src="Docs/log_lek.png" width="90%"><br>Logowanie lekarza
+      <img src="Docs/log_lek.png" width="90%"><br>Doctor Login
     </td>
   </tr>
   <tr>
     <td colspan="2" align="center">
-      <img src="Docs/log_far.png" width="45%"><br>Logowanie farmaceuty
+      <img src="Docs/log_far.png" width="45%"><br>Pharmacist Login
     </td>
   </tr>
 </table>
 
 ---
 
-### Pacjent
+### Patient Views
 
 <table>
   <tr>
     <td align="center">
-      <img src="Docs/panel_pac.png" width="90%"><br>Panel pacjenta
+      <img src="Docs/panel_pac.png" width="90%"><br>Patient Dashboard
     </td>
     <td align="center">
-      <img src="Docs/panel_pac_lek.png" width="90%"><br>Leki pacjenta
+      <img src="Docs/panel_pac_lek.png" width="90%"><br>Patient Medications
     </td>
   </tr>
   <tr>
     <td align="center">
-      <img src="Docs/panel_pac_edyt.png" width="90%"><br>Edycja danych
+      <img src="Docs/panel_pac_edyt.png" width="90%"><br>Edit Patient Details
     </td>
     <td align="center">
-      <img src="Docs/panel_pac_rec.png" width="90%"><br>Recepty pacjenta
+      <img src="Docs/panel_pac_rec.png" width="90%"><br>Patient Prescriptions
     </td>
   </tr>
 </table>
 
 ---
 
-### Lekarz
+### Doctor Views
 
 <table>
   <tr>
     <td align="center">
-      <img src="Docs/panel_lek.png" width="90%"><br>Panel lekarza
+      <img src="Docs/panel_lek.png" width="90%"><br>Doctor Dashboard
     </td>
     <td align="center">
-      <img src="Docs/panel_lek_rec.png" width="90%"><br>Recepty lekarza
+      <img src="Docs/panel_lek_rec.png" width="90%"><br>Doctor Prescriptions
     </td>
   </tr>
   <tr>
     <td colspan="2" align="center">
-      <img src="Docs/panel_lek_pac.png" width="45%"><br>Pacjenci lekarza
+      <img src="Docs/panel_lek_pac.png" width="45%"><br>Doctor’s Patients
     </td>
   </tr>
 </table>
 
 ---
 
-### Farmaceuta
+### Pharmacist Views
 
 <table>
   <tr>
     <td align="center">
-      <img src="Docs/panel_far.png" width="90%"><br>Panel farmaceuty
+      <img src="Docs/panel_far.png" width="90%"><br>Pharmacist Dashboard
     </td>
     <td align="center">
-      <img src="Docs/panel_far_rec_szcz.png" width="90%"><br>Szczegóły recepty
+      <img src="Docs/panel_far_rec_szcz.png" width="90%"><br>Prescription Details
     </td>
   </tr>
   <tr>
     <td align="center">
-      <img src="Docs/panel_far_aso.png" width="90%"><br>Asortyment apteki
+      <img src="Docs/panel_far_aso.png" width="90%"><br>Pharmacy Inventory
     </td>
     <td align="center">
-      <img src="Docs/panel_far_mag.png" width="90%"><br>Magazyn apteki
+      <img src="Docs/panel_far_mag.png" width="90%"><br>Inventory Stock
     </td>
   </tr>
   <tr>
     <td colspan="2" align="center">
-      <img src="Docs/panel_far_rec.png" width="45%"><br>Recepty w aptece
+      <img src="Docs/panel_far_rec.png" width="45%"><br>Pharmacy Prescriptions
     </td>
   </tr>
 </table>
 
+## Authors
 
-## Autorzy
-
-- Piotr Nowak ([GitHub](https://github.com/Puegoo))
+* Piotr Nowak ([GitHub](https://github.com/Puegoo))
